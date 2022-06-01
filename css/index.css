@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f1f1;
+  }
+  
+  /* navbar styles */
+
+  .heading{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .login {
+    float: right;
+    text-align: center;
+  }
+  .navbar {
+    overflow: hidden;
+    background-color: black;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 25px 30px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 25px 30px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: black;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown .dropbtn1 {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 25px 30px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+
+  .fa fa-fw fa-search {
+    text-align: left;
+    float: left;
+  }
+
+  /* product card */
+
+  .column {
+    float: left;
+    width: 30%;
+    padding: 0 20px;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding-top: 20px;
+    width: 300px;
+    margin: 40px;
+    float: center;
+    text-align: center;
+    font-family: arial;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+
+  /* contactform styles */
+
+  .contactform {
+    border-radius: 0.3rem;
+    padding: 1rem;
+    }
+
+    input[type=text], input, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+    
+    input[type=submit] {
+      background-color: red;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+      background-color: red;
+    }
+
+    /* Footer styles */
+
+    .footer {
+      overflow: hidden;
+      clear: both;
+      max-width: 940px;
+      padding-top: 26px;
+      border-top: 1px solid #bbb;
+      color: #aaa;
+      height: 80px;
+      width: 50%;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+      padding-bottom: 0;
+      text-align: center;
+    }
