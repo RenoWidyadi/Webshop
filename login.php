@@ -7,18 +7,22 @@
 </head>
 <body>
 <?php
-    require('db.php');
+    require('database.php');
     session_start();
-        $username = stripslashes($_REQUEST['username']);    
+    // Wanneer het formulier is verzonden, controleert en maak je een gebruikerssessie aan.
+    if (isset($_POST['username'])) {
+        $username = stripslashes($_REQUEST['username']);    // verwijder backslashes
         $username = mysqli_real_escape_string($con, $username);
         $password = stripslashes($_REQUEST['password']);
         $password = mysqli_real_escape_string($con, $password);
-        $query    = "SELECT * FROM `users` WHERE username='$username'
+        // Controleer of de gebruiker bestaat in de database
+        $query    = "SELECT * FROM `klant` WHERE username='$username'
                      AND password='" . md5($password) . "'";
         $result = mysqli_query($con, $query) or die(mysql_error());
         $rows = mysqli_num_rows($result);
         if ($rows == 1) {
             $_SESSION['username'] = $username;
+            // Omleiden naar gebruikersdashboardpagina
             header("Location: dashboard.php");
         } else {
             echo "<div class='form'>
