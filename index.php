@@ -6,9 +6,7 @@
 <div class="column">
     <div class="card">
     <h2 style="text-align:center">Laptops</h2>
-    
 
-   
       
 </div>
 </form>

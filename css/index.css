@@ -97,7 +97,7 @@ body {
   /* product card */
 
   .column {
-    float: left;
+    float: middle;
     width: 30%;
     padding: 0 20px;
   }
